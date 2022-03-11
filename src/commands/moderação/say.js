@@ -4,7 +4,7 @@ module.exports = class extends Command{
     constructor(client){
         super(client, {
             name: 'say', 
-            description : 'Comando para fazer anúncio',
+            description : 'Comando para o bot falar em um determinando chat.',
             options: [
                 {
                     name: 'canal',
