@@ -10,7 +10,7 @@ module.exports = class PingCommand extends Command{
 
     run = (interaction) => {
         interaction.reply({
-            content: `Ping:\`${this.client.ws.ping}\` ms.`
+            content: `Ping:\`${this.client.ws.ping}\` ms.`, ephemeral: true
             
         })
     }
