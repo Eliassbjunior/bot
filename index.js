@@ -16,4 +16,4 @@ const client = new Client({
 
 
 
-client.login(process.env.BOT_TOKEN);
+client.login("OTQyMTIyMTk3NDQ5ODM0NTU3.Ygf5qw.k65qVZCxGcU1yLPpu3r2-I__NiQ");
