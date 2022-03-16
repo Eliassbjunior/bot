@@ -34,7 +34,7 @@ module.exports = class extends Command{
             "797136213953085486",
             "797136213836300362"
         ].includes(r.id))){
-            return interaction.reply({content: `Permissão insuficientes!`, ephemeral: true })
+            return interaction.reply({content: "**`Permissões insuficientes`**", ephemeral: true })
         }else{
 
             canal.send( {content: texto})
