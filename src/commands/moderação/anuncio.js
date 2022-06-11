@@ -67,13 +67,14 @@ module.exports = class AnuncioCommand extends Command{
             return interaction.reply({content: "**`Permissões insuficientes`**", ephemeral: true })
         }else{
 
-        const titulo = interaction.options.getString('titulo')
+        const aux = interaction.options.getString('titulo')
         var p1 = interaction.options.getString('paragrafo1')
         var p2 = interaction.options.getString('paragrafo2')
         var p3 = interaction.options.getString('paragrafo3')
         var p4 = interaction.options.getString('paragrafo4')
         var footer = "Att. Equipe AGRESS1VE."
         
+        var titulo = aux + '\n\n';
 
         if(p2 === null){
            var mensagem = '\n\n\n\n' + p1 + '\n\n\n' + footer + '\n\n\n'
